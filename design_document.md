@@ -22,3 +22,4 @@ by Eric Tang, Tyler Chan, Farhan Khan, Kanjuda Shaika
 
 8. 
    
+api: https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
