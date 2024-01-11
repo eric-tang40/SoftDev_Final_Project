@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 </head>
 <body>
-    <h1>Welcome to Eric's Soccer Page!</h1>
+    <h1>Welcome to Our Pokedex!</h1>
+    <p>Explore my apps:</p>
+    <ul>
+        <li><a href="{% url 'pokemon:index' %}">Pokemon</a></li>
+        <li><a href="{% url 'trainers:index' %}">Trainers</a></li>
+    </ul>
 </body>
 </html>
