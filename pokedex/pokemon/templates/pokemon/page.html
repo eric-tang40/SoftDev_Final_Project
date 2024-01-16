@@ -10,7 +10,7 @@
 </head>
 <body>
     <h4><a href="{% url 'pokemon:index' %}">Back</a> </h4>
-    <h1>Welcome to the {{ poke_data.name|title }}'s Page</h1>
+    <h1>Welcome to {{ poke_data.name|title }}'s Page</h1>
     <h2>Name: {{ poke_data.name|title }}</h2>
     <h3>Types:</h3>
     <ul>
