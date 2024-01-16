@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import index
+from .views import index, indv_page
 
 app_name = 'pokemon'
 
 urlpatterns = [
-    path('<int:poke_id>', index, name='index'), 
+    path('', index, name='index'), 
+    path('<int:poke_id>', indv_page, name='indv_page'), 
 ]

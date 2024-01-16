@@ -8,10 +8,13 @@ import requests
 class PokemonListView(ListView):
     model = Pokemon
 
-def index(request, poke_id):
+def indv_page(request, poke_id):
     poke_data = get_pokemon_data(poke_id)
     context = {'poke_data': poke_data}
-    return render(request, 'pokemon/index.html', context)
+    return render(request, 'pokemon/page.html', context)
+
+def index(request):
+    return render(request, 'pokemon/index.html')
 
 def get_pokemon_data(poke_id):
     # fetching data
