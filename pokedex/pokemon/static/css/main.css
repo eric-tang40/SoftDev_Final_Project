@@ -7,14 +7,20 @@ body {
 
 h1 {
     color: #f0f0f0;
-<<<<<<< HEAD
-    background-color: blue;
-=======
     background-color: rgb(251, 55, 55);
->>>>>>> 08000654ece609f2499a7222a8f1ebc7ae9866e5
     padding: 20px;
     text-align: center;
     margin: 0;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    padding: 5px;
+    text-align: center;
 }
 
 ul {
@@ -58,16 +64,6 @@ p {
     text-align: center; 
 }
 
-<<<<<<< HEAD
-h2 {
-    padding: 10px;
-    text-align: center;
-}
-
-h3 {
-    padding: 5px;
-    text-align: center;
-=======
 table {
     margin: auto;
     border-collapse: collapse;
@@ -88,5 +84,4 @@ th {
 tr:nth-child(odd) {
     background-color: #f75e5e;
     color: white;
->>>>>>> 08000654ece609f2499a7222a8f1ebc7ae9866e5
 }
