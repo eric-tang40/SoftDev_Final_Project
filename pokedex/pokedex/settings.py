@@ -121,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    # BASE_DIR / "pokemon/static",  
+    BASE_DIR / "pokemon/static",  
     BASE_DIR / "trainers/static",
     BASE_DIR / "core/static",
 ]

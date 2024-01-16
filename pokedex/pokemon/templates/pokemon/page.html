@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="{% static 'css/pokemon.css' %}">
 </head>
 <body>
-    <h1>Welcome to the Pokemon Page</h1>
-    <h2>Name: {{ poke_data.name }}</h2>
+    <h4><a href="{% url 'pokemon:index' %}">Back</a> </h4>
+    <h1>Welcome to the {{ poke_data.name|title }}'s Page</h1>
+    <h2>Name: {{ poke_data.name|title }}</h2>
+    <h3>Types:</h3>
     <ul>
         {% for type in poke_data.types %}
             <li>
-                <strong>{{ type.type.name }}</strong>
+                <strong>{{ type.type.name|title }}</strong>
             </li>
         {% endfor %}
     </ul>  
@@ -23,7 +25,7 @@
     <ul>
         {% for stat in poke_data.stats %}
             <li>
-                <strong>{{ stat.stat.name }}</strong>: {{ stat.base_stat }}
+                <strong>{{ stat.stat.name|title }}</strong>: {{ stat.base_stat|title }}
             </li>
         {% endfor %}
     </ul>

@@ -14,7 +14,15 @@ def indv_page(request, poke_id):
     return render(request, 'pokemon/page.html', context)
 
 def index(request):
-    return render(request, 'pokemon/index.html')
+    url = "https://pokeapi.co/api/v2/pokemon?limit=151"  
+    response = requests.get(url)
+    data = response.json()
+    pokemon_names = []
+    pokemon_names = [pokemon['name'] for pokemon in data.get('results', [])]
+
+    context = {'pokemon_list': pokemon_names}
+    return render(request, 'pokemon/index.html', context)
+
 
 def get_pokemon_data(poke_id):
     # fetching data
@@ -22,4 +30,5 @@ def get_pokemon_data(poke_id):
     response = requests.get(poke_API)
     data = response.json()
     return data
+
 
