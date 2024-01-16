@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('core.urls')),
     path('pokemon/', include('pokemon.urls')),
     path('trainers/', include('trainers.urls')),
+    path('teams/', include('teams.urls')),
 ]

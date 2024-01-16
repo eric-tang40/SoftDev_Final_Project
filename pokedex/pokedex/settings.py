@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'core',
     'pokemon',
     'trainers',
+    'teams',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "pokemon/static",  
     BASE_DIR / "trainers/static",
     BASE_DIR / "core/static",
+    BASE_DIR / "teams/static",
 ]
 
 # Default primary key field type
