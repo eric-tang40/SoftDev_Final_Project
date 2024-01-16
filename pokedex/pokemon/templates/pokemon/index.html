@@ -6,10 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pokemon.css' %}">
 </head>
 <body>
     <h1>Welcome to the Pokemon Page</h1>
+    <h2>Name: {{ poke_data.name }}</h2>
+    <ul>
+        {% for type in poke_data.types %}
+            <li>
+                <strong>{{ type.type.name }}</strong>
+            </li>
+        {% endfor %}
+    </ul>  
+
+    <h3>Stats:</h3>
+    <ul>
+        {% for stat in poke_data.stats %}
+            <li>
+                <strong>{{ stat.stat.name }}</strong>: {{ stat.base_stat }}
+            </li>
+        {% endfor %}
+    </ul>
     <p>Go back to: <a href="{% url 'core:homepage' %}">Homepage</a> </p>
 </body>
 </html>
