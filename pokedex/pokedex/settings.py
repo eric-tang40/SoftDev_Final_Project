@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # JSON-based secrets module 
 with open(os.path.join(
-    BASE_DIR, 'basketball', 'secrets.json')) as f: 
+    BASE_DIR, 'pokedex', 'secrets.json')) as f: 
     secrets = json.loads(f.read())
 
 def get_secret(setting, secrets=secrets):
@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'pokedex.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-with open('secrets.json') as secrets_file:
+with open('pokedex/secrets.json') as secrets_file:
     secrets = json.load(secrets_file)
 
 DATABASES = { 
