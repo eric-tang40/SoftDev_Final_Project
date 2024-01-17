@@ -2,3 +2,5 @@
 
 nodeenv
 pgadmin4
+requests
+psycopg2
