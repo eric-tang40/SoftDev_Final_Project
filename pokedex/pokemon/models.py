@@ -7,13 +7,11 @@ class Type(models.Model):
 
 class Pokemon(models.Model):
     dex_num = models.SmallIntegerField(primary_key = True)
-    type = models.ManyToManyField(Type)
-    name = models.CharField(max_length = 50)
+    name = models.CharField(max_length=100)
+    types = models.JSONField()
+    base_stats = models.JSONField()
     
-    hp = models.SmallIntegerField()
-    attack = models.SmallIntegerField()
-    sp_atk = models.SmallIntegerField()
-    defense = models.SmallIntegerField()
-    sp_def = models.SmallIntegerField()
-    speed = models.SmallIntegerField()
     ability = models.CharField(max_length = 50)
+
+    def __str__(self):
+        return self.name
