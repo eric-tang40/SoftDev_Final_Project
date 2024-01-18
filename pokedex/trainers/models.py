@@ -8,3 +8,4 @@ class Trainer(models.Model):
     team  = models.JSONField()
     # we meed to wait for novillo documentation for this and types
 # Create your models here.
+
