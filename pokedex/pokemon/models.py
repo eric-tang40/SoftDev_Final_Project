@@ -6,10 +6,12 @@ class Type(models.Model):
 # Create your models here.
 
 class Pokemon(models.Model):
-    dex_num = models.SmallIntegerField(primary_key = True)
+    dex_num = models.BigAutoField(primary_key = True, editable=False)
     name = models.CharField(max_length=100)
     types = models.JSONField()
-    base_stats = models.JSONField()
+    
+    base_stats = models.JSONField(default=dict)
+    types = models.JSONField(default=dict)
     
     ability = models.CharField(max_length = 50)
 

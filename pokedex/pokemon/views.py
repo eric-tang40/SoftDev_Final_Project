@@ -25,8 +25,8 @@ def index(request):
     pokemon_names = [pokemon['name'] for pokemon in data.get('results', [])]
 
     for pokemon_name in pokemon_names:
-        pokemon_data = get_pokemon_data_by_name(pokemon_name)
-        Pokemon.objects.get_or_create(
+        pokemon_data = get_pokemon_data(pokemon_name)
+        pokemon_obj, created = Pokemon.objects.get_or_create(
             name=pokemon_data['name'],
             defaults={'types': [t['type']['name'] for t in pokemon_data['types']], 'base_stats': {stat['stat']['name']: stat['base_stat'] for stat in pokemon_data['stats']}}
         )
