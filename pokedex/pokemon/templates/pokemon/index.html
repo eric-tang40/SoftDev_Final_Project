@@ -23,11 +23,11 @@
             </tr>
         </thead>
         <tbody>
-            {% for pokemon_name in pokemon_list %}
+            {% for pokemon in pokemon_list %}
                 <tr>
                     <td>{{ forloop.counter }}</td>
-                    <td>{{ pokemon_name|title }}</td>
-                    <td><a href="{% url 'pokemon:indv_page' poke_id=forloop.counter %}" class="btn btn-primary">{{ pokemon_name|title }}</a></td>
+                    <td>{{ pokemon.name|title }}</td>
+                    <td><a href="{{ pokemon.url }}" class="btn btn-primary">{{ pokemon.name|title }}</a></td>
                 </tr>
             {% endfor %}
         </tbody>

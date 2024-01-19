@@ -16,18 +16,18 @@
     <h2>Name: {{ poke_data.name|title }}</h2>
     <h3>Types:</h3>
     <ul class="list-group">
-        {% for type in poke_data.types %}
+        {% for type_name in poke_data.types %}
             <li class="list-group-item">
-                <strong>{{ type.type.name|title }}</strong>
+                <strong>{{ type_name|title }}</strong>
             </li>
         {% endfor %}
     </ul>  
 
     <h3 class="mt-3">Stats:</h3>
     <ul class="list-group">
-        {% for stat in poke_data.stats %}
+        {% for stat_name, base_stat in poke_data.base_stats.items %}
             <li class="list-group-item">
-                <strong>{{ stat.stat.name|title }}</strong>: {{ stat.base_stat|title }}
+                <strong>{{ stat_name|title }}</strong>: {{ base_stat|title }}
             </li>
         {% endfor %}
     </ul>
