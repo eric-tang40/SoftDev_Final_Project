@@ -7,16 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trainers</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <h1>Welcome to the Trainers Page</h1>
     <p>Go back to: <a href="{% url 'core:homepage' %}">Homepage</a> </p>
-    <table>
+    
+    <table class="table">
+      <thead class="thead-dark">
         <tr>
           <th>Trainer Name</th>
           <th>Preferred Type</th>
           <th>Gym Badge</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
           <td>Brock</td>
           <td>Rock</td>
@@ -52,6 +57,7 @@
             <td>Ground</td>
             <td>Earth Badge</td>
           </tr>
+        </tbody>
       </table>
     <script>
 
