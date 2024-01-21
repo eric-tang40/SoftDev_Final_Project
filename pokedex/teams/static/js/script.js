@@ -14,31 +14,31 @@ const teams = {
 const gymLeadersData = {
     brock: {
         team: ["Onix", "Geodude", "Sandslash", "Kabutops", "Rhyhorn", "Graveler"],
-        image: "{% static img/brock.png %}", 
+        image: "/static/img/brock.png", 
     },
     misty: {
         team: ["Starmie", "Psyduck", "Golduck", "Staryu", "Gyarados", "Psyduck"],
-        image: "{% static img/misty.png %}", 
+        image: "/static/img/misty.png", 
     },
     surge: {
         team: ["Voltorb", "Pikachu", "Raichu", "Magnemite", "Electabuzz", "Jolteon"], 
-        image: "{% static img/surge.png %}", 
+        image: "/static/img/surge.png", 
     },
     erika: {
         team: ["Victreebell", "Tangela", "Vileplume", "Leafeon", "Exeggcute", "Oddish"],
-        image: "{% static img/erika.png %}", 
+        image: "/static/img/erika.png", 
     },
     koga: {
         team: ["Koffing", "Muk", "Weezing", "Venomoth", "Crobat", "Ariados"],
-        image: "{% static img/koga.png %}", 
+        image: "/static/img/koga.png", 
     },
     sabrina: {
         team: ["Kadabra", "Drowzee", "Mr. Mime", "Espeon", "Alakazam", "Slowbro"],
-        image: "{% static img/sabrina.png %}", 
+        image: "/static/img/sabrina.png", 
     },
     giovanni: {
         team: ["Nidoking", "Garchomp", "Dugtrio", "Rhydon", "Persian", "Mewtwo"],
-        image: "{% static img/giovanni.png %}", 
+        image: "/static/img/giovanni.png", 
     },
     
 };
