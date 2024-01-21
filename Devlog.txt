@@ -1,0 +1,64 @@
+﻿NOTE: must run pip install requests , pip install psycopg2. Remember to add to launch code elecelecinstructions
+
+
+EricT, FarhanK, TylerC → 1/08/2024. 2:45pm. Completed half of the design document. 
+
+
+EricT, FarhanK, TylerC, KanjudaS → 1/09/2024. 2:45pm. Completed design document. 
+
+
+EricT, FarhanK, TylerC, KanjudaS → 1/10/2024. 2:30pm. Created Django project, uploaded boilerplate to github 
+
+
+EricT → 1/10/2024. 3:10pm. Updated Boilerplate with more files (templates, html, css)
+
+
+FarhanK → 1/11/2024 2:30 pm. Added trainer information into html view for convenience.
+
+
+TylerC → 1/11/2024 2:30 pm.  Began work on models for both trainer and pokemon
+
+
+EricT, FarhanK → 1/12/2024. 2:44pm. Began working on the first fetch for the API data
+
+
+TylerC → 1/12/2024 2:45. Viewed the JSON field documentation posted on Piazza and implemented it into models for trainers.  Made a models for Core.
+
+
+FarhanK → 1/13/2024. 11:20pm. Successfully accessed API data and displayed necessary info (name, stats, etc.)
+
+
+EricT → 1/16/2024. 1:04am. Created table that lists all Pokemon with information including links to their individual html pages. Improved design and css of individual pokemon pages. Fixed small issue with urls.
+
+
+EricT, FarhanK → 1/16/2024. 2:45pm. Created new app teams and added basic boilerplate
+
+
+EricT→ 1/16/2024. 9:14pm. Created database on Postgres. Modified code in settings.py to support a centralized database. Created .gitignore file to untrack secrets.json. 
+
+
+TylerC → 1/16/24 Implemented the bootstrap so that our html would form tables better
+
+
+TylerC, KanjudaS → 1/17/24 4:47. Updated the models and connected the API to transfer all the data into the database (the pokemon table should be filled with 151 entries). Tested using Jupyter Notebook
+
+
+EricT→ 1/18/2024. 10:24am. Made and applied migrations to the database, fixed backend errors with variable declarations. 
+
+
+FarhanK —> 1/18/2024. 2:46 pm. Updated readme file with necessary information. (API, launch codes, description, etc)
+
+
+EricT→ 1/18/2024. 3:24pm. Populated trainers table in database. 
+
+
+EricT→ 1/19/2024. 6:38pm. Changed backend code so pokemon data is extracted from the database and not directly from the API. 
+
+
+EricT→ 1/20/2024. 11:56am. Added and improved bootstrap on all html pages. 
+
+
+EricT, FarhanK → 1/20/2024. 11:31pm. Added JS code for teams page to display team names, trainer names, and trainer images.
+
+
+EricT→ 1/21/2024. 1:46pm. Added search bar using JS to pokemon page. Cut unnecessary code from teams and changed display of teams page.
