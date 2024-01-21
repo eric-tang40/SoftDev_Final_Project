@@ -75,3 +75,33 @@ tr:nth-child(odd) {
     background-color: #f75e5e;
     color: white;
 }
+
+#buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#gymLeaders section {
+    display: none; /* Hide all team sections initially */
+}
+
+#gymLeaders section h2 {
+    color: #333;
+}
+
+#gymLeaderImage {
+    max-width: 100%;
+    height: auto;
+}
