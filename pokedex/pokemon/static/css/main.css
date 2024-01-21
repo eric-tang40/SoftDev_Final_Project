@@ -93,9 +93,9 @@ button:hover {
     background-color: #2980b9;
 }
 
-#gymLeaders section {
-    display: none; /* Hide all team sections initially */
-}
+/* #gymLeaders section {
+    display: none; 
+} */
 
 #gymLeaders section h2 {
     color: #333;
