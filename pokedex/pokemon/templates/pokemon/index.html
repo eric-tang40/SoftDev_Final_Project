@@ -14,8 +14,12 @@
         <div class="col-md-12">
             <h1>Welcome to the Pokemon Page</h1>
             <p>Go back to: <a href="{% url 'core:homepage' %}">Homepage</a> </p>
+            
+            <form class="form-inline mb-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Pokemon" aria-label="Search" id="searchInput">
+            </form>
 
-            <table class="table">
+            <table class="table" id="pokemonTable">
                 <thead class="thead-dark">
                     <tr>
                         <th>ID</th>
@@ -35,5 +39,9 @@
             </table>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src={% static 'js/pokemon.js' %}></script>
 </body>
+
 </html>

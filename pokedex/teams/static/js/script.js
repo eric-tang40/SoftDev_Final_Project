@@ -50,7 +50,7 @@ function displayTeam(gymLeader) {
 
     // team
     const teamSection = document.createElement("section");
-    teamSection.id = "teamContainer";  // Use a consistent ID for the team container
+    teamSection.id = "teamContainer";  
     
     const teamList = gymLeadersData[gymLeader].team;
     const teamTitle = document.createElement("h2");
@@ -85,9 +85,3 @@ for (const gymLeader in gymLeadersData) {
     button.addEventListener("click", () => displayTeam(gymLeader));
     buttonsContainer.appendChild(button);
 }
-
-// hide initial content
-const contentSections = document.querySelectorAll("#gymLeaders section, #gymLeaderImage");
-contentSections.forEach(section => {
-    section.style.display = "none";
-});

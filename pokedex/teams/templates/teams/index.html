@@ -14,44 +14,16 @@
 <body>
   <h1>Welcome to the Teams Page</h1>
 
+  <div id="buttons">
+  </div>
+
   <div id="gymLeaders">
     <div id="teamContainer"></div>
     <div id="gymLeaderImage"></div>
-    <section id="brock" class="gymLeader">
-        <h2 style="text-align:center">Brock's Team</h2>
-    </section>
-
-    <section id="misty" class="gymLeader">
-        <h2>Misty's Team</h2>
-    </section>
-
-    <section id="surge" class="gymLeader">
-       <h2>Lt. Surge's Team</h2>
-    </section>
-
-    <section id="erika" class="gymLeader">
-       <h2>Erika's Team</h2>
-    </section>
-
-    <section id="koga" class="gymLeader">
-       <h2>Koga's Team</h2>
-    </section>
-
-    <section id="sabrina" class="gymLeader">
-       <h2>Sabrina's Team</h2>
-    </section>
-
-    <section id="giovanni" class="gymLeader">
-       <h2>Giovanni's Team</h2>
-    </section>
-
 </div>
 
-<div id="buttons">
-</div>
-
-  <p>Go back to: <a href="{% url 'core:homepage' %}">Homepage</a> </p>
- <script src={% static 'js/script.js' %}></script>
+<p>Go back to: <a href="{% url 'core:homepage' %}">Homepage</a> </p>
+<script src={% static 'js/script.js' %}></script>
 
 </body>
 
