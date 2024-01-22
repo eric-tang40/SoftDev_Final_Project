@@ -1,6 +1,3 @@
-﻿NOTE: must run pip install requests , pip install psycopg2. Remember to add to launch code elecelecinstructions
-
-
 EricT, FarhanK, TylerC → 1/08/2024. 2:45pm. Completed half of the design document. 
 
 
@@ -62,3 +59,6 @@ EricT, FarhanK → 1/20/2024. 11:31pm. Added JS code for teams page to display t
 
 
 EricT→ 1/21/2024. 1:46pm. Added search bar using JS to pokemon page. Cut unnecessary code from teams and changed display of teams page.
+
+
+EricT→ 1/21/2024. 7:08pm. Finalized README.md
